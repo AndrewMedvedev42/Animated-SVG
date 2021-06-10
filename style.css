@@ -1,0 +1,93 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section{
+    margin: 2rem;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+#PineappleLeaf{
+    animation: leaf 1s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#Pineapple{
+    animation: pineapple 1s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#bigWheel{
+    animation: wheelleft 5s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#smallWheel{
+    animation: wheelright 1s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#yellowNote{
+    animation: yellowMove 0.7s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+
+#redNote{
+    animation: redMove 0.7s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes wheelright{
+    0% {transform: rotateZ(0deg);}
+    100% {transform: rotateZ(360deg);}
+}
+
+@keyframes wheelleft{
+    0% {transform: rotateZ(0deg);}
+    100% {transform: rotateZ(-360deg);}
+}
+
+@keyframes leaf{
+    0% {transform: rotatex(20deg);}
+    50% {transform: rotatex(-20deg);}
+    100% {transform: rotatex(20deg);}
+}
+
+@keyframes pineapple{
+    0% {transform: rotatex(15deg);}
+    50% {transform: rotatex(-15deg);
+        }
+    100% {transform: rotatex(15deg);}
+}
+
+@keyframes yellowMove{
+    0% {transform: rotateZ(10deg);}
+    50% {transform: rotateZ(-10deg);}
+    100% {transform: rotateZ(10deg);}
+}
+
+@keyframes redMove{
+    0% {transform: rotateZ(-10deg);}
+    50% {transform: rotateZ(10deg);}
+    100% {transform: rotateZ(-10deg);}
+}
